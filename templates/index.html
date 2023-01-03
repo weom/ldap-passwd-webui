@@ -45,20 +45,20 @@
     <main>
       <h1>{{.Title}}</h1>
 
-      <form method="post">
+      <form method="post" autocomplete="off">
         <label for="username">Username</label>
-        <input id="username" name="username" value="{{.Username}}" type="text" required autofocus>
+        <input id="username" name="username" value="{{.Username}}" type="text" required autofocus autocomplete="off">
 
         <label for="old-password">Old password</label>
-        <input id="old-password" name="old-password" type="password" required>
+        <input id="old-password" name="old-password" type="password" required autocomplete="off">
 
         <label for="new-password">New password</label>
         <input id="new-password" name="new-password" type="password"
-            pattern="{{.Pattern}}" x-moz-errormessage="{{.PatternInfo}}" required>
+            pattern="{{.Pattern}}" x-moz-errormessage="{{.PatternInfo}}" required autocomplete="off">
 
         <label for="confirm-password">Confirm new password</label>
         <input id="confirm-password" name="confirm-password" type="password"
-        pattern="{{.Pattern}}" x-moz-errormessage="{{.PatternInfo}}" required>
+        pattern="{{.Pattern}}" x-moz-errormessage="{{.PatternInfo}}" required autocomplete="off">
         <p>{{.PatternInfo}}</p>
         <p>Type the numbers you see in the picture below:</p>
         <p>
